@@ -118,7 +118,8 @@ footer {
   height: 50px;
 }
 
-h3, h2 {
+h3,
+h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -140,6 +141,30 @@ h3, h2 {
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
+}
+
+/* unvisited link */
+p a:link {
+  color: rgb(255, 104, 235);
+  text-decoration: none;
+}
+
+/* visited link */
+p a:visited {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* mouse over link */
+p a:hover {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+/* selected link */
+p a:active {
+  color: rgb(81, 162, 255);
+  text-decoration: none;
 }
 
 /* <------ Codes Below are for Portfolio Page Only */
@@ -176,7 +201,7 @@ h3, h2 {
 }
 
 .work a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .auth-image {
@@ -198,15 +223,15 @@ h3, h2 {
 }
 
 label,
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   display: block;
   width: 100%;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 textarea {
   height: 35px;
   padding: 0 10px;
@@ -218,7 +243,8 @@ textarea {
   height: 200px;
 }
 
-input[type=submit] {
+input[type="submit"],
+input[type="reset"] {
   padding: 10px 30px;
   font-size: 18px;
   color: #fff;
@@ -227,14 +253,13 @@ input[type=submit] {
   border: 0 none;
 }
 
-    /*End of Codes for Portfolio Page*/
+/*End of Codes for Portfolio Page*/
 
 /* <------ Codes Below are for Responsive Page Only */
 
 /* <------ Codes Below are for Desktop Screens */
 
 @media screen and (max-width: 980px) {
-
   #main-container,
   .navbar {
     margin-left: 30px;
@@ -250,14 +275,11 @@ input[type=submit] {
     /*background-color: black;*/
     margin-bottom: 10px;
   }
-
-
 }
 
 /* <------ Codes Below are for Tablet Screens */
 
 @media screen and (max-width: 768px) {
-
   #main-container {
     width: calc(100% - 30px);
     margin: 0 15px 15px 15px;
@@ -281,14 +303,11 @@ input[type=submit] {
   .work {
     width: 45%;
   }
-
-
 }
 
 /* <------ Codes Below are for Phone Screens */
 
 @media screen and (max-width: 640px) {
-
   #main-container {
     width: calc(100% - 30px);
     margin: 0 15px 10px 15px;
@@ -348,6 +367,4 @@ input[type=submit] {
   .work {
     width: 100%;
   }
-
-
 }
